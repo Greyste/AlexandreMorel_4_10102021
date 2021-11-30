@@ -26,6 +26,15 @@ a:hover {
     z-index: 100000;
     background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
+.small {
+    font-size : 14px;
+}
+.medium {
+    font-size : 18px;
+}
+.large {
+    font-size : 22px;
+}
 
 .bloc {
     width: 100%;
@@ -536,6 +545,14 @@ a[data-lightbox] {
     text-align: center;
 }
 
+a[data-lightbox] img {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -676,8 +693,9 @@ a {
     margin: auto auto auto auto;
 }
 
+/** changement Font-size pour être lisible sur tous les devices) **/
 p {
-    font-size: 11px;
+    font-size: 20px;
 }
 
 .tight-width-whitespace {
@@ -705,11 +723,17 @@ p {
 }
 
 h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
 }
 
 h3 {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+h4 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
